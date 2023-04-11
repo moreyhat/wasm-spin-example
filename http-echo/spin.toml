@@ -1,0 +1,15 @@
+spin_manifest_version = "1"
+authors = ["moreyhat <moreyhat@gmail.com>"]
+description = "Simple echo service"
+name = "http echo"
+trigger = { type = "http", base = "/" }
+version = "0.1.0"
+
+[[component]]
+id = "echo"
+source = "target/wasm32-wasi/release/echo.wasm"
+allowed_http_hosts = []
+[component.trigger]
+route = "/..."
+[component.build]
+command = "cargo build --target wasm32-wasi --release"

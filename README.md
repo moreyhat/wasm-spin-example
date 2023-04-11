@@ -1,2 +1,7 @@
 # wasm-spin-example
-Example WASM applications for Spin
+This repository includes exmaples for SPIN application
+
+## Prerequisite
+- [Spin](https://github.com/fermyon/spin)
+## Examples
+- [http echo](./http-echo/)
