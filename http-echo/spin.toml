@@ -1,7 +1,7 @@
 spin_manifest_version = "1"
 authors = ["moreyhat <moreyhat@gmail.com>"]
 description = "Simple echo service"
-name = "http echo"
+name = "http-echo"
 trigger = { type = "http", base = "/" }
 version = "0.1.0"
 
